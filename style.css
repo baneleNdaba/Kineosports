@@ -1,0 +1,199 @@
+/* ---- Reset & Base ---- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { 
+  font-family: Arial, sans-serif; 
+  line-height: 1.6; 
+  color: #fff; 
+  background: #000; 
+}
+h1, h2, h3, h4 { color: #00bfff; margin-bottom: 10px; }
+section { padding: 60px 20px; }
+.container { max-width: 1200px; margin: auto; }
+
+/* ---- Hero ---- */
+.hero {
+  background: url('https://images.unsplash.com/photo-1599058917212-6d42b9230d07?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+  background-blend-mode: multiply;
+  background-color: rgba(0,0,0,0.7);
+}
+.hero h1 { font-size: 2.8rem; margin-bottom: 15px; }
+.hero p { font-size: 1.2rem; margin-bottom: 20px; }
+.btn {
+  display: inline-block;
+  background: #00bfff;
+  color: #000;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+.btn:hover { background: #fff; color: #000; }
+
+/* ---- About ---- */
+.about { background: #111; }
+.about .content { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; }
+.about img { width: 300px; border-radius: 12px; }
+.about-text { flex: 1; color: #ccc; }
+.about-text strong { color: #00bfff; }
+
+/* ---- Services ---- */
+.services { background: #000; }
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+.service-card {
+  background: #111;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #222;
+  color: #ddd;
+  transition: transform 0.3s;
+}
+.service-card:hover { transform: translateY(-5px); border-color: #00bfff; }
+
+/* ---- Testimonials ---- */
+.testimonials { background: #111; text-align: center; }
+.testimonial {
+  display: none;
+  max-width: 700px;
+  margin: auto;
+  font-style: italic;
+  color: #ccc;
+}
+.testimonial.active { display: block; }
+
+/* ---- Contact ---- */
+.contact { background: #000; }
+.contact h2 { color: #00bfff; }
+.contact form {
+  display: grid;
+  gap: 15px;
+  max-width: 600px;
+  margin: auto;
+}
+.contact input, .contact textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #333; 
+  border-radius: 6px;
+  background: #111;
+  color: #fff;
+}
+.contact input::placeholder, .contact textarea::placeholder { color: #888; }
+.contact button {
+  padding: 12px; 
+  background: #00bfff; 
+  color: #000; 
+  font-weight: bold;
+  border: none; 
+  border-radius: 6px;
+}
+.contact button:hover { background: #fff; color: #000; }
+
+/* ---- Footer ---- */
+footer {
+  background: #111;
+  color: #666;
+  text-align: center;
+  padding: 20px;
+}
+footer p { font-size: 0.9rem; }
+
+footer .btn {
+  margin-bottom: 20px;
+  display: inline-block; /* ensures margin works properly */
+}
+/* ---- Responsive ---- */
+@media(max-width: 768px) {
+  .about .content { flex-direction: column; text-align: center; }
+}
+.map-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.map-section h2 {
+  color: #00bfff; /* light blue */
+  margin-bottom: 15px;
+}
+
+.map-container {
+  max-width: 900px;
+  margin: 0 auto;
+  border: 3px solid #00bfff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+}
+
+.contact-info {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ffffff; /* white text */
+}
+
+.contact-info p {
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+}
+
+.contact-info .icon {
+  margin-right: 10px;
+  color: #4FC3F7; /* light blue accent */
+  font-size: 1.2rem;
+}
+
+.contact-info a {
+  color: #4FC3F7; /* light blue links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #82E9FF; /* brighter blue on hover */
+}
+.services {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.services h2 {
+  color: #4FC3F7;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.card {
+  background-color: #111;
+  color: #fff;
+  border: 1px solid #4FC3F7;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.6);
+}
+
+.card h3 {
+  color: #4FC3F7;
+  margin-bottom: 10px;
+}
