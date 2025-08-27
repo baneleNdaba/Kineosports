@@ -256,15 +256,31 @@ footer .btn {
   margin-bottom: 12px;
 }
 
+/* Ensure logo container is always visible */
 .logo-container {
   text-align: center;
-  margin-bottom: 20px; /* space between logo and hero text */
+  margin-bottom: 20px;
 }
 
+/* Responsive logo size */
 .logo {
-  max-width: 200px; /* adjust size as needed */
+  max-width: 200px; /* desktop default */
+  width: 50%;        /* scale down on small screens */
   height: auto;
+  display: block;
+  margin: 0 auto;
 }
+
+/* Optional: adjust hero text for small screens */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
 
 .hero {
   text-align: center;
